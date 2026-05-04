@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SecurePass Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>SecurePass Analyzer</h1>
+
+    <form method="POST">
+        <input type="password" name="password" placeholder="Enter Password" required>
+        <button type="submit">Check Strength</button>
+    </form>
+
+    <h2>{{ result }}</h2>
+
+    <p>Create strong passwords to stay safe from cyber attacks.</p>
+</div>
+
+</body>
+</html>
